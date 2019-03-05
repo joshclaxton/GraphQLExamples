@@ -2,7 +2,8 @@
 
 https://countries.trevorblades.com/
 
-#Simple
+## Simple 
+https://graphql.org/learn/queries/#fields
 ```
 {
   continents {
@@ -15,7 +16,8 @@ https://countries.trevorblades.com/
 }
 ```
 
-#Parameters
+## Arguments 
+https://graphql.org/learn/queries/#arguments
 ```
 {
   continent(code: "AF") {
@@ -28,7 +30,8 @@ https://countries.trevorblades.com/
 }
 ```
 
-#Aliases
+## Aliases 
+https://graphql.org/learn/queries/#aliases
 ```
 {
   africa: continent(code: "AF") {
@@ -41,7 +44,7 @@ https://countries.trevorblades.com/
 }
 ```
 
-#Aliases Complex
+## Aliases Complex 
 ```
 {
   africa: continent(code: "AF") {
@@ -62,7 +65,8 @@ https://countries.trevorblades.com/
 }
 ```
 
-#Explicitly Name Query 
+## Operation Name 
+https://graphql.org/learn/queries/#operation-name
 ```
 query ContinentsStartingWithA {
   africa: continent(code: "AF") {
@@ -83,28 +87,8 @@ query ContinentsStartingWithA {
 }
 ```
 
-#Named Operation 
-```
-query ContinentsStartingWithA {
-  africa: continent(code: "AF") {
-    countries {
-      name
-    }
-  }
-  antarctica: continent(code: "AN") {
-    countries {
-      name
-    }
-  }
-  asia: continent(code: "AS") {
-    countries {
-      name
-    }
-  }
-}
-```
-
-#Named Operation with variables. 
+## Variables 
+https://graphql.org/learn/queries/#variables
 Cleaner and easier to hand off to someone else since the don't have to modify the query, just the variables
 ```
 query ContinentWithCode($continentCode: String){
@@ -125,7 +109,8 @@ variables
 }
 ```
 
-#Fancy variables
+## Directives 
+https://graphql.org/learn/queries/#directives
 ```
 query ContinentWithCode($continentCode: String!, $includeCountries: Boolean!){
   africa: continent(code: $continentCode) {
