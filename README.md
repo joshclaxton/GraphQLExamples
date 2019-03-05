@@ -1,6 +1,6 @@
 # GraphQL Examples
 
-https://countries.trevorblades.com/
+Some GraphQL Examples to help train Devs/QA. Uses the Countries GraphQL API: https://countries.trevorblades.com/.
 
 ## Simple 
 https://graphql.org/learn/queries/#fields
